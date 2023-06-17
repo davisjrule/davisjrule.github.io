@@ -1,6 +1,8 @@
+### TEST: bundle exec jekyll serve
 ### Site Settings ###
 title: Davis Rule
 description: >-
+  Hi, I'm Davis Rule :wave:
   I write code,
   make music,
   and take photos.
@@ -44,7 +46,7 @@ author:
 # keybase           : your_username
 
 ### Posts ###
-permalink: /blog/:title
+#permalink: /blog/:title
 
 ### Collections ###
 collections:
