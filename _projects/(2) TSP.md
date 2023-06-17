@@ -2,7 +2,7 @@
 name: Traveling Salesperson Problem Heuristics
 tools: [python, numpy, matplotlib, algorithms]
 image: /assets/img/tsp_heuristics.png
-description: I built a visualizer for several heuristics that seek to approximate a solution to the traveling salesperson problem (TSP). I utilized arbitrary insertion to generate a preliminarty approximation, and 2-OPT to eliminate path crossings.
+description: I built a visualizer for several heuristics that seek to approximate a solution to the traveling salesperson problem (TSP). I utilized arbitrary insertion to generate a preliminary approximation, and 2-OPT to eliminate path crossings.
 external_url: https://github.com/davisjrule/TSP_heuristics
 ---
 
