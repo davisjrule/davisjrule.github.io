@@ -8,18 +8,134 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
     <div id="navbar-placeholder"></div>
-    <main>
-      <div class="music-grid">
-        <!-- TODO: Add music items here with placeholders for album covers and song names -->
+    <div class="intro-text">
+      <p>
+        I’ve been releasing original music on all major streaming platforms
+        since 2018. <br />
+        Check out some of my work below!
+      </p>
+    </div>
+    <main class="container mt-5 text-center">
+      <div class="music-grid mt-4">
+        <!-- Album 1 -->
+        <div class="album">
+          <a
+            href="https://open.spotify.com/album/0F49ZPqBBT4HmzOxeezHqw?si=Hk6rtSvJS5uQLcNkUTMAxQ"
+            target="_blank"
+          >
+            <img
+              src="assets/images/art_canthelpit.jpg"
+              alt="Can’t Help It"
+              class="img-fluid"
+            />
+            <h3 class="album-title">Can’t Help It</h3>
+            <p class="release-date">June 2023</p>
+          </a>
+        </div>
+        <!-- Album 2: Wasting Time -->
+        <div class="album">
+          <a
+            href="https://open.spotify.com/album/59OITmPs1cOWwwfduV1YVm?si=6tWm9mD-Q0mDh2DbduRnLA"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/art_wastingtime.jpg"
+              alt="Wasting Time"
+              class="img-fluid"
+            />
+            <h3 class="album-title">Wasting Time</h3>
+            <p class="release-date">August 2022</p>
+          </a>
+        </div>
+
+        <!-- Album 3: Hypocrisies -->
+        <div class="album">
+          <a
+            href="https://open.spotify.com/album/2TQltmURBwp5hK8NCQgTvi?si=sTCN7l2sSViUcG_GuqNj9A"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/art_hypocrisies.jpg"
+              alt="Hypocrisies"
+              class="img-fluid"
+            />
+            <h3 class="album-title">Hypocrisies</h3>
+            <p class="release-date">June 2022</p>
+          </a>
+        </div>
+
+        <!-- Album 4: Summer Night -->
+        <div class="album">
+          <a
+            href="https://open.spotify.com/album/77rVIQCKe4tl3ms8ZZJSet?si=7B3JOxyaSaKJmDDGXQ2Kmg"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/art_summernight.jpg"
+              alt="Summer Night"
+              class="img-fluid"
+            />
+            <h3 class="album-title">Summer Night</h3>
+            <p class="release-date">August 2021</p>
+          </a>
+        </div>
+
+        <!-- Album 5: Change My Mind -->
+        <div class="album">
+          <a
+            href="https://open.spotify.com/album/0RPm92tvU3x99QQncoD97g?si=t-120sTpQ1evdP62lNKPEg"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/art_CMM.jpg"
+              alt="Change My Mind"
+              class="img-fluid"
+            />
+            <h3 class="album-title">Change My Mind</h3>
+            <p class="release-date">June 2021</p>
+          </a>
+        </div>
+
+        <!-- Album 6: One More Chance -->
+        <div class="album">
+          <a
+            href="https://open.spotify.com/album/5nMYlgFR0DxBOErFcKNj4E?si=__AaxV4pQVCPmQSov4FeHg"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/art_OMC.jpg"
+              alt="One More Chance"
+              class="img-fluid"
+            />
+            <h3 class="album-title">One More Chance</h3>
+            <p class="release-date">September 2020</p>
+          </a>
+        </div>
+
+        <!-- Album 7: Hustle -->
+        <div class="album">
+          <a
+            href="https://open.spotify.com/album/5rrFPxZPdlVJHZCB8t3TRX?si=5hLaKh2ATn6I9AP6AjesAg"
+            target="_blank"
+          >
+            <img
+              src="/assets/images/art_hustle.jpg"
+              alt="Hustle"
+              class="img-fluid"
+            />
+            <h3 class="album-title">Hustle</h3>
+            <p class="release-date">June 2018</p>
+          </a>
+        </div>
       </div>
     </main>
     <script>
       // Load the navbar dynamically
-      document.addEventListener("DOMContentLoaded", function (event) {
+      document.addEventListener("DOMContentLoaded", function () {
         fetch("navbar.html")
           .then((response) => response.text())
           .then(

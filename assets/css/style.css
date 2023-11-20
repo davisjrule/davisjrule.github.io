@@ -36,3 +36,148 @@ nav ul {
     list-style: none;
     display: flex;
 }
+
+/* New styles for the homepage layout */
+h1.display-4 {
+    font-size: 2.5rem;
+    /* Large title size */
+    font-weight: 700;
+    /* Making the title bold */
+    margin-bottom: 0.5em;
+}
+
+img.img-fluid {
+    max-height: 400px;
+    /* Adjust the size of the image */
+    width: auto;
+    /* Adjust the width automatically */
+    border-radius: 5px;
+    /* Optional: adds rounded corners to the image */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1.display-4 {
+        font-size: 2rem;
+        /* Slightly smaller font size on smaller screens */
+    }
+
+    img.img-fluid {
+        max-height: 300px;
+        /* Smaller image on smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+/* Styles for the experience page */
+.experience-entry {
+    margin-bottom: 3rem;
+}
+
+.company {
+    font-size: 1.2rem;
+    /* Adjust as necessary */
+    font-weight: bold;
+}
+
+.job-title {
+    font-size: 1rem;
+    /* Adjust as necessary */
+    color: #6c757d;
+}
+
+.location {
+    font-size: 1rem;
+    /* Adjust as necessary */
+    font-weight: bold;
+}
+
+.date {
+    font-size: 1rem;
+    /* Adjust as necessary */
+    color: #6c757d;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 0.1rem;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .col-6 {
+        display: block;
+        text-align: left;
+    }
+
+    .location,
+    .date {
+        text-align: left;
+        display: block;
+        font-size: 0.85rem;
+        /* Adjust as necessary */
+    }
+}
+
+/* Add new styles for the music grid */
+
+/* New styles for the music page intro text */
+.intro-text p {
+    font-size: 1.2rem;
+    margin-top: 4.0rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.music-grid .album {
+    margin-bottom: 2rem;
+}
+
+.music-grid .album-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: black;
+    text-align: center
+}
+
+.music-grid .release-date {
+    font-size: 0.8rem;
+    color: #6c757d;
+    text-align: center
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 992px) {
+    .music-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .music-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ensure images scale within their containers */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Davis Rule - Experience</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div id="navbar-placeholder"></div>
+    <main class="container mt-5">
+      <!-- Experience Section -->
+      <div class="resume-section">
+        <!-- Walmart Global Tech Experience -->
+        <div class="experience-entry">
+          <div class="row">
+            <div class="col-6 col-md-8 text-left">
+              <div class="company">Walmart Global Tech</div>
+              <div class="job-title text-secondary">
+                Software Engineering Intern
+              </div>
+            </div>
+            <div class="col-6 col-md-4 text-right">
+              <div class="location">Bentonville, Arkansas</div>
+              <div class="date text-secondary">May 2023 - August 2023</div>
+            </div>
+          </div>
+          <ul>
+            <li>
+              Developed a scheduled Node.js program to automate data collection
+              for 20+ product teams enrolled in the Digital Experience Scoring
+              (DEx) framework, integrating with several APIs and GCP BigQuery
+              tables.
+            </li>
+            <li>
+              Implemented data preprocessing and validation to ensure accuracy
+              before insertion into a common Azure SQL database.
+            </li>
+            <li>
+              Streamlined workflows and strengthened data integrity by
+              automating metric entries for product owners, leading to enhanced
+              data quality and saving stakeholders countless hours of manual
+              data entry every month.
+            </li>
+            <li>
+              Onboarded new product owners, providing support to ensure a
+              seamless transition as DEx scales company-wide.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Michigan Data Science Team Experience -->
+        <div class="experience-entry">
+          <div class="row">
+            <div class="col-6 col-md-8 text-left">
+              <div class="company">Michigan Data Science Team</div>
+              <div class="job-title text-secondary">
+                Image Classification Team
+              </div>
+            </div>
+            <div class="col-6 col-md-4 text-right">
+              <div class="location">Ann Arbor, Michigan</div>
+              <div class="date text-secondary">October 2022 - Present</div>
+            </div>
+          </div>
+          <ul>
+            <li>
+              Utilized convolutional neural networks (CNNs) to classify images
+              from a public dataset as either dogs or cats.
+            </li>
+            <li>
+              Developed skills with essential machine learning and computer
+              vision libraries such as Tensorflow, Pandas, and OpenCV.
+            </li>
+            <li>
+              Built a dog breed classification model capable of predicting 120
+              breeds with >60% accuracy using transfer learning.
+            </li>
+          </ul>
+        </div>
+
+        <!-- University of Michigan, School of Information Experience -->
+        <div class="experience-entry">
+          <div class="row">
+            <div class="col-6 col-md-8 text-left">
+              <div class="company">
+                University of Michigan, School of Information
+              </div>
+              <div class="job-title text-secondary">Research Assistant</div>
+            </div>
+            <div class="col-6 col-md-4 text-right">
+              <div class="location">Ann Arbor, Michigan</div>
+              <div class="date text-secondary">October 2021 - October 2022</div>
+            </div>
+          </div>
+          <ul>
+            <li>
+              Conducted research into the limitations of industry-standard
+              machine learning interpretability frameworks.
+            </li>
+            <li>
+              Generated interpretability visuals for a machine learning model
+              using Python with interpretability tools such as SHapley Additive
+              exPlanations (SHAP) and Generalized Additive Models (GAMs).
+            </li>
+            <li>
+              Distributed Jupyter notebooks at a large scale to survey
+              participants for data collection through a Qualtrics survey.
+            </li>
+            <li>
+              Co-authored a paper for publication in the 2022 Conference on
+              Human Factors in Computing Systems (CHI).
+            </li>
+          </ul>
+        </div>
+
+        <!-- Maple Loft Studios Experience -->
+        <div class="experience-entry">
+          <div class="row">
+            <div class="col-6 col-md-8 text-left">
+              <div class="company">Maple Loft Studios</div>
+              <div class="job-title text-secondary">
+                Film Production Assistant
+              </div>
+            </div>
+            <div class="col-6 col-md-4 text-right">
+              <div class="location">Berlin, Massachusetts</div>
+              <div class="date text-secondary">May 2022 - August 2022</div>
+            </div>
+          </div>
+          <ul>
+            <li>
+              Transported film equipment between locations throughout the New
+              England area for commercial video productions.
+            </li>
+            <li>
+              Communicated with directors and producers to ensure lighting and
+              cameras were properly placed on set.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <script>
+      // Load the navbar dynamically
+      document.addEventListener("DOMContentLoaded", function (event) {
+        fetch("navbar.html")
+          .then((response) => response.text())
+          .then(
+            (data) =>
+              (document.getElementById("navbar-placeholder").innerHTML = data)
+          );
+      });
+    </script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.8.9/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
