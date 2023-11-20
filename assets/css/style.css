@@ -47,11 +47,11 @@ h1.display-4 {
 }
 
 img.img-fluid {
-    max-height: 400px;
+    /* max-height: 400px; */
     /* Adjust the size of the image */
     width: auto;
     /* Adjust the width automatically */
-    border-radius: 5px;
+    /* border-radius: 5px; */
     /* Optional: adds rounded corners to the image */
 }
 
@@ -180,4 +180,36 @@ ul li {
 .img-fluid {
     max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Styles for photography content */
+.photography-content {
+    width: 40%;
+    height: auto;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.photo-entry {
+    margin-bottom: 4rem;
+}
+
+.photo-entry img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 0.25rem;
+}
+
+.camera-details {
+    font-size: 0.8rem;
+    color: #6c757d;
 }
