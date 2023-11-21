@@ -11,64 +11,82 @@
 
 <body>
   <div id="navbar-placeholder"></div>
+
+  <!-- Project 1 -->
   <main class="container mt-4">
-    <!-- Project 1 -->
-    <div class="project-entry row mb-4">
-      <div class="col-12 col-md-8 project-text">
-        <h4 class="project-title">Traveling Salesperson Heuristics</h4>
-        <p class="project-description">
-          I built a visualizer for several heuristics that seek to approximate a solution to the traveling salesperson
-          problem (TSP). I utilized arbitrary insertion to generate a preliminary approximation, and 2-OPT to eliminate
-          path crossings.
-        </p>
-        <p class="skills">Skills: Python, Numpy, Matplotlib, algorithms</p>
-        <a href="https://github.com/davisjrule/TSP_heuristics" class="btn btn-primary">Check it out</a>
+    <div class="row mb-4">
+      <div class="col-12 col-md-8">
+        <div class="project-text">
+          <h4 class="project-title">Traveling Salesperson Heuristics</h4>
+          <p class="project-description">
+            I built a visualizer for several heuristics that seek to approximate a solution to the traveling salesperson
+            problem (TSP). I utilized arbitrary insertion to generate a preliminary approximation, and 2-OPT to
+            eliminate path crossings.
+          </p>
+          <p class="skills">Skills: Python, Numpy, Matplotlib, algorithms</p>
+          <a href="https://github.com/davisjrule/TSP_heuristics" class="btn btn-primary">Check it out</a>
+        </div>
       </div>
-      <div class="col-12 col-md-4 project-image">
-        <img src="/assets/images/proj_tsp.png" alt="Traveling Salesperson Heuristics" class="img-fluid">
-      </div>
-    </div>
-    <!-- Project 2: Sorting Algorithm Visualizer -->
-    <div class="project-entry row mb-4">
-      <div class="col-12 col-md-8 project-text">
-        <h4 class="project-title">Sorting Algorithm Visualizer</h4>
-        <p class="project-description">
-          I built a sorting algorithm visualizer in Python.
-        </p>
-        <p class="skills">Skills: Python, Pygame, algorithms, data structures</p>
-        <a href="https://github.com/davisjrule/visual-sort" class="btn btn-primary">Check it out</a>
-      </div>
-      <div class="col-12 col-md-4 project-image">
-        <img src="/assets/images/proj_visualsort.png" alt="Sorting Algorithm Visualizer" class="img-fluid">
-      </div>
-    </div>
-    <!-- Project 3: Machine Learning Interpretability Research -->
-    <div class="project-entry row mb-4">
-      <div class="col-12 col-md-8 project-text">
-        <h4 class="project-title">Machine Learning Interpretability Research</h4>
-        <p class="project-description">
-          I worked on a research team at the University of Michigan where we studied the shortcomings of current machine
-          learning interpretability frameworks. I was involved in data collection and cleaning, model development,
-          survey distribution, and analysis of results. I also contributed to authoring a research paper for publication
-          in various HCI (Human Computer Interaction) conferences.
-        </p>
-        <p class="skills">Skills: Python, Pandas, Research, ML</p>
-        <a href="https://www.linkedin.com/in/davis-rule-2559bb204/" class="btn btn-primary">Check it out</a>
-      </div>
-      <div class="col-12 col-md-4 project-image">
-        <img src="/assets/images/proj_urop.png" alt="Machine Learning Interpretability Research" class="img-fluid">
+      <div class="col-12 col-md-4">
+        <div class="project-image">
+          <img src="/assets/images/proj_tsp.png" alt="Traveling Salesperson Heuristics" class="img-fluid">
+        </div>
       </div>
     </div>
   </main>
+
+  <!-- Project 2 -->
+  <main class="container mt-4">
+    <div class="row mb-4">
+      <div class="col-12 col-md-8">
+        <div class="project-text">
+          <h4 class="project-title">Sorting Algorithm Visualizer</h4>
+          <p class="project-description">
+            I built a sorting algorithm visualizer in Python.
+          </p>
+          <p class="skills">Skills: Python, Pygame, algorithms, data structures</p>
+          <a href="https://github.com/davisjrule/visual-sort" class="btn btn-primary">Check it out</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="project-image">
+          <img src="/assets/images/proj_visualsort.png" alt="Sorting Algorithm Visualizer" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Project 3 -->
+  <main class="container mt-4">
+    <div class="row mb-4">
+      <div class="col-12 col-md-8">
+        <div class="project-text">
+          <h4 class="project-title">Machine Learning Interpretability Research</h4>
+          <p class="project-description">
+            I worked on a research team at the University of Michigan where we studied the shortcomings of current
+            machine learning interpretability frameworks. I was involved in data collection and cleaning, model
+            development,
+            survey distribution, and analysis of results. I also contributed to authoring a research paper for
+            publication in various HCI (Human Computer Interaction) conferences.
+          </p>
+          <p class="skills">Skills: Python, Pandas, Research, ML</p>
+          <a href="https://www.linkedin.com/in/davis-rule-2559bb204/" class="btn btn-primary">Check it out</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4">
+        <div class="project-image">
+          <img src="/assets/images/proj_urop.png" alt="Machine Learning Interpretability Research" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </main>
+
   <script>
     // Load the navbar dynamically
     document.addEventListener("DOMContentLoaded", function (event) {
       fetch("navbar.html")
         .then((response) => response.text())
-        .then(
-          (data) =>
-            (document.getElementById("navbar-placeholder").innerHTML = data)
-        );
+        .then((data) => (document.getElementById("navbar-placeholder").innerHTML = data));
     });
   </script>
   <!-- Bootstrap JS and dependencies -->

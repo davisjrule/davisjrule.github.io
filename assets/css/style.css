@@ -220,6 +220,12 @@ ul li {
     padding: 1rem;
     border-radius: 5px;
     margin-bottom: 2rem;
+    display: block;
+}
+
+.project-text,
+.project-image {
+    margin-bottom: 1rem;
 }
 
 .project-image img {
@@ -244,7 +250,6 @@ ul li {
     color: #6c757d;
     margin-bottom: 0.5rem;
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
