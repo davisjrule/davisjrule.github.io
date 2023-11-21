@@ -213,3 +213,58 @@ ul li {
     font-size: 0.8rem;
     color: #6c757d;
 }
+
+/* Projects Section */
+.project-entry {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-title {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.skills {
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .project-entry {
+        text-align: center;
+    }
+
+    .project-text {
+        padding-right: 0;
+    }
+
+    .project-image img {
+        max-width: 100%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-image img {
+        max-width: 100%;
+    }
+}
