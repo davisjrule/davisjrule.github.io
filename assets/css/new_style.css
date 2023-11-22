@@ -1,0 +1,227 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: white;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    padding-left: 30px;
+}
+
+.navbar-nav {
+    margin: 0;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+/* Homepage */
+h1.display-4 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+    padding-top: 70px;
+}
+
+/* Experience Section */
+.experience-entry {
+    margin-bottom: 3rem;
+}
+
+.company {
+    font-size: 1.2rem;
+    /* Adjust as necessary */
+    font-weight: bold;
+}
+
+.job-title {
+    font-size: 1rem;
+    /* Adjust as necessary */
+    color: #6c757d;
+}
+
+.location {
+    font-size: 1rem;
+    /* Adjust as necessary */
+    font-weight: bold;
+}
+
+.date {
+    font-size: 1rem;
+    /* Adjust as necessary */
+    color: #6c757d;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 0.1rem;
+}
+
+
+/* Projects Section */
+.project-entry {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.project-text,
+.project-image {
+    margin-bottom: 1rem;
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-title {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project-description,
+.skills {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #63696e;
+    border-color: #63696e;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #35383a;
+    border-color: #1d2124;
+}
+
+/* Music Page */
+.intro-text {
+    text-align: center;
+    font-weight: 500;
+    font-size: 110%;
+    padding-top: 20px;
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.music-grid .album {
+    margin-bottom: 2rem;
+}
+
+.music-grid .album-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: black;
+}
+
+.music-grid .release-date {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+/* Photography Content */
+.photography-content {
+    width: 40%;
+    height: auto;
+    margin: auto;
+    padding-top: 2rem;
+}
+
+.photo-entry {
+    margin-bottom: 4rem;
+}
+
+.photo-entry img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1rem;
+    color: black;
+    margin-bottom: 0.25rem;
+}
+
+.camera-details {
+    font-size: 0.8rem;
+    color: #6c757d;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .music-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .music-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .project-image img {
+        max-width: 100%;
+    }
+
+    .col-6 {
+        text-align: left;
+        display: block;
+    }
+}

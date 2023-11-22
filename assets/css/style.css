@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +12,6 @@ html {
     line-height: 1.6;
 }
 
-/* Header */
 header {
     width: 100%;
     background: #fff;
@@ -21,32 +19,80 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Navbar */
-.navbar {
-    padding: 10px 20px;
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+/* Adjust the navbar brand and nav items spacing */
 .navbar-brand {
     padding-left: 30px;
-}
-
-.navbar-nav {
-    margin: 0;
 }
 
 .navbar-nav .nav-item {
     margin-right: 10px;
 }
 
-/* Homepage */
+/* This affects the entire navbar spacing, if you want to add more padding */
+.navbar {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+
+/* New styles for the homepage layout */
 h1.display-4 {
     font-size: 2.5rem;
+    /* Large title size */
     font-weight: 700;
+    /* Making the title bold */
     margin-bottom: 0.5em;
     padding-top: 70px;
 }
 
-/* Experience Section */
+img.img-fluid {
+    /* max-height: 400px; */
+    /* Adjust the size of the image */
+    width: auto;
+    /* Adjust the width automatically */
+    /* border-radius: 5px; */
+    /* Optional: adds rounded corners to the image */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1.display-4 {
+        font-size: 2rem;
+        /* Slightly smaller font size on smaller screens */
+    }
+
+    img.img-fluid {
+        max-height: 300px;
+        /* Smaller image on smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+/* Styles for the experience page */
 .experience-entry {
     margin-bottom: 3rem;
 }
@@ -80,63 +126,34 @@ ul {
 }
 
 ul li {
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.01rem;
 }
 
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .col-6 {
+        display: block;
+        text-align: left;
+    }
 
-/* Projects Section */
-.project-entry {
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 5px;
-    margin-bottom: 2rem;
-    display: block;
+    .location,
+    .date {
+        text-align: left;
+        display: block;
+        font-size: 0.85rem;
+        /* Adjust as necessary */
+    }
 }
 
-.project-text,
-.project-image {
-    margin-bottom: 1rem;
-}
+/* Add new styles for the music grid */
 
-.project-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.project-title {
-    font-size: 1.75rem;
-    color: #333;
+/* New styles for the music page intro text */
+.intro-text p {
+    font-size: 1.2rem;
+    margin-top: 4.0rem;
     margin-bottom: 0.5rem;
-}
-
-.project-description,
-.skills {
-    font-size: 1rem;
-    color: #6c757d;
-    margin-bottom: 0.5rem;
-}
-
-/* Buttons */
-.btn-primary {
-    background-color: #63696e;
-    border-color: #63696e;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
-    background-color: #35383a;
-    border-color: #1d2124;
-}
-
-/* Music Page */
-.intro-text {
-    text-align: center;
     font-weight: 500;
-    font-size: 110%;
-    padding-top: 20px;
+    text-align: center;
 }
 
 .music-grid {
@@ -155,14 +172,37 @@ ul li {
     font-weight: bold;
     margin-top: 0.5rem;
     color: black;
+    text-align: center
 }
 
 .music-grid .release-date {
     font-size: 0.8rem;
     color: #6c757d;
+    text-align: center
 }
 
-/* Photography Content */
+/* Adjustments for responsiveness */
+@media (max-width: 992px) {
+    .music-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .music-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Ensure images scale within their containers */
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Styles for photography content */
 .photography-content {
     width: 40%;
     height: auto;
@@ -192,36 +232,78 @@ ul li {
     color: #6c757d;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 992px) {
-    .music-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+/* Projects Section */
+.project-entry {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    /* border-bottom: 1px solid #cccccc5f; */
+    padding-bottom: 2rem;
+    display: block;
 }
 
-@media (max-width: 576px) {
-    .music-grid {
-        grid-template-columns: 1fr;
-    }
+.project-text,
+.project-image {
+    margin-bottom: 1rem;
+}
 
-    .container {
-        flex-direction: column;
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-title {
+    font-size: 1.75rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.skills {
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+/* Button */
+.btn-primary {
+    background-color: #63696e;
+    border-color: #63696e;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #35383a;
+    /* A slightly darker gray for hover/focus states */
+    border-color: #1d2124;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .project-entry {
         text-align: center;
     }
 
-    .img-fluid {
+    .project-text {
+        padding-right: 0;
+    }
+
+    .project-image img {
         max-width: 100%;
-        margin-bottom: 20px;
+        margin: 0 auto;
+        margin-bottom: 1rem;
     }
 }
 
 @media (max-width: 768px) {
     .project-image img {
         max-width: 100%;
-    }
-
-    .col-6 {
-        text-align: left;
-        display: block;
     }
 }
