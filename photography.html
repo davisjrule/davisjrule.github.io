@@ -1,127 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Davis Rule - Photography</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <div id="navbar-placeholder"></div>
-    <main>
-      <div class="photography-content">
-        <!-- Image 1 -->
-        <div class="photo-entry">
-          <img
-            src="/assets/flicks/san-juan-waves.jpg"
-            alt="View from Castillo San Felipe del Morro"
-            class="img-fluid"
-          />
-          <p class="description">
-            View from Castillo San Felipe del Morro (San Juan, Puerto Rico)
-          </p>
-          <p class="camera-details">Sony A6000, Sigma 30mm f/1.4</p>
-        </div>
-        <!-- Image 2: Casa Battló -->
-        <div class="photo-entry">
-          <img
-            src="/assets/flicks/casa-battlo.jpg"
-            alt="View of Casa Battló, by Antoni Gaudí"
-            class="img-fluid"
-          />
-          <p class="description">
-            View of Casa Battló, by Antoni Gaudí (Barcelona, Spain)
-          </p>
-          <p class="camera-details">iPhone 13 Pro</p>
-        </div>
 
-        <!-- Image 3: Angell Hall Observatory -->
-        <div class="photo-entry">
-          <img
-            src="/assets/flicks/angell-hall.jpg"
-            alt="Angell Hall Observatory"
-            class="img-fluid"
-          />
-          <p class="description">Angell Hall Observatory (Ann Arbor, MI)</p>
-          <p class="camera-details">iPhone 13 Pro</p>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Davis Rule - Photography</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
 
-        <!-- Image 4: Portrait of Kiera -->
-        <div class="photo-entry">
-          <img
-            src="/assets/flicks/kiera-portrait.jpg"
-            alt="Portrait of my friend Kiera"
-            class="img-fluid"
-          />
-          <p class="description">Portrait of my friend Kiera</p>
-          <p class="camera-details">Sony A6000, Sigma 30mm f/1.4</p>
-        </div>
-
-        <!-- Image 5: Pink Facade -->
-        <div class="photo-entry">
-          <img
-            src="/assets/flicks/madrid-facade.jpg"
-            alt="Pink facade"
-            class="img-fluid"
-          />
-          <p class="description">Pink facade (Madrid, Spain)</p>
-          <p class="camera-details">iPhone 13 Pro</p>
-        </div>
-
-        <!-- Image 6: Man in the Street -->
-        <div class="photo-entry">
-          <img
-            src="/assets/flicks/paris-street.jpg"
-            alt="Man in the street"
-            class="img-fluid"
-          />
-          <p class="description">Man in the street (Paris, France)</p>
-          <p class="camera-details">iPhone 13 Pro</p>
-        </div>
-
-        <!-- Image 7: Hammock Room -->
-        <div class="photo-entry">
-          <img
-            src="/assets/flicks/san-juan-hammock.jpg"
-            alt="Hammock room"
-            class="img-fluid"
-          />
-          <p class="description">Hammock room (San Juan, Puerto Rico)</p>
-          <p class="camera-details">Sony A6000, Sigma 30mm f/1.4</p>
-        </div>
-
-        <!-- Image 8: Dheeksha's Headshot -->
-        <div class="photo-entry">
-          <img
-            src="/assets/flicks/dheeksha-headshot.jpg"
-            alt="Professional headshot for my friend Dheeksha"
-            class="img-fluid"
-          />
-          <p class="description">
-            Professional headshot for my friend Dheeksha
-          </p>
-          <p class="camera-details">Sony A6000, Sigma 30mm f/1.4</p>
-        </div>
+<body>
+  <div id="navbar-placeholder"></div>
+  <main>
+    <div class="photography-content">
+      <!-- Image 1 -->
+      <div class="photo-entry">
+        <img src="/assets/flicks/san-juan-waves.jpg" alt="View from Castillo San Felipe del Morro" class="img-fluid"
+          loading="lazy" />
+        <p class="description">
+          View from Castillo San Felipe del Morro (San Juan, Puerto Rico)
+        </p>
+        <p class="camera-details">Sony A6000, Sigma 30mm f/1.4</p>
       </div>
-    </main>
-    <script>
-      // Load the navbar dynamically
-      document.addEventListener("DOMContentLoaded", function (event) {
-        fetch("navbar.html")
-          .then((response) => response.text())
-          .then(
-            (data) =>
-              (document.getElementById("navbar-placeholder").innerHTML = data)
-          );
-      });
-    </script>
-    <!-- Bootstrap JS and dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.8.9/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
+      <!-- Image 2: Casa Battló -->
+      <div class="photo-entry">
+        <img src="/assets/flicks/casa-battlo.jpg" alt="View of Casa Battló, by Antoni Gaudí" class="img-fluid"
+          loading="lazy" />
+        <p class="description">
+          View of Casa Battló, by Antoni Gaudí (Barcelona, Spain)
+        </p>
+        <p class="camera-details">iPhone 13 Pro</p>
+      </div>
+
+      <!-- Image 3: Angell Hall Observatory -->
+      <div class="photo-entry">
+        <img src="/assets/flicks/angell-hall.jpg" alt="Angell Hall Observatory" class="img-fluid" loading="lazy" />
+        <p class="description">Angell Hall Observatory (Ann Arbor, MI)</p>
+        <p class="camera-details">iPhone 13 Pro</p>
+      </div>
+
+      <!-- Image 4: Portrait of Kiera -->
+      <div class="photo-entry">
+        <img src="/assets/flicks/kiera-portrait.jpg" alt="Portrait of my friend Kiera" class="img-fluid"
+          loading="lazy" />
+        <p class="description">Portrait of my friend Kiera</p>
+        <p class="camera-details">Sony A6000, Sigma 30mm f/1.4</p>
+      </div>
+
+      <!-- Image 5: Pink Facade -->
+      <div class="photo-entry">
+        <img src="/assets/flicks/madrid-facade.jpg" alt="Pink facade" class="img-fluid" loading="lazy" />
+        <p class="description">Pink facade (Madrid, Spain)</p>
+        <p class="camera-details">iPhone 13 Pro</p>
+      </div>
+
+      <!-- Image 6: Man in the Street -->
+      <div class="photo-entry">
+        <img src="/assets/flicks/paris-street.jpg" alt="Man in the street" class="img-fluid" loading="lazy" />
+        <p class="description">Man in the street (Paris, France)</p>
+        <p class="camera-details">iPhone 13 Pro</p>
+      </div>
+
+      <!-- Image 7: Hammock Room -->
+      <div class="photo-entry">
+        <img src="/assets/flicks/san-juan-hammock.jpg" alt="Hammock room" class="img-fluid" loading="lazy" />
+        <p class="description">Hammock room (San Juan, Puerto Rico)</p>
+        <p class="camera-details">Sony A6000, Sigma 30mm f/1.4</p>
+      </div>
+
+      <!-- Image 8: Dheeksha's Headshot -->
+      <div class="photo-entry">
+        <img src="/assets/flicks/dheeksha-headshot.jpg" alt="Professional headshot for my friend Dheeksha"
+          class="img-fluid" loading="lazy" />
+        <p class="description">
+          Professional headshot for my friend Dheeksha
+        </p>
+        <p class="camera-details">Sony A6000, Sigma 30mm f/1.4</p>
+      </div>
+    </div>
+  </main>
+  <script>
+    // Load the navbar dynamically
+    document.addEventListener("DOMContentLoaded", function (event) {
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then(
+          (data) =>
+            (document.getElementById("navbar-placeholder").innerHTML = data)
+        );
+    });
+  </script>
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.8.9/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </html>

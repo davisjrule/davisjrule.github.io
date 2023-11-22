@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -12,6 +13,7 @@ html {
     line-height: 1.6;
 }
 
+/* Header */
 header {
     width: 100%;
     background: #fff;
@@ -19,62 +21,32 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.container {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Navbar */
+.navbar {
+    padding: 10px 20px;
 }
 
-h1 {
+.navbar-brand {
+    padding-left: 30px;
+}
+
+.navbar-nav {
     margin: 0;
-    font-size: 1.5em;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
+.navbar-nav .nav-item {
+    margin-right: 10px;
 }
 
-/* New styles for the homepage layout */
+/* Homepage */
 h1.display-4 {
     font-size: 2.5rem;
-    /* Large title size */
     font-weight: 700;
-    /* Making the title bold */
     margin-bottom: 0.5em;
+    padding-top: 70px;
 }
 
-img.img-fluid {
-    /* max-height: 400px; */
-    /* Adjust the size of the image */
-    width: auto;
-    /* Adjust the width automatically */
-    /* border-radius: 5px; */
-    /* Optional: adds rounded corners to the image */
-}
-
-/* Responsive design adjustments */
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    h1.display-4 {
-        font-size: 2rem;
-        /* Slightly smaller font size on smaller screens */
-    }
-
-    img.img-fluid {
-        max-height: 300px;
-        /* Smaller image on smaller screens */
-        margin-bottom: 20px;
-    }
-}
-
-/* Styles for the experience page */
+/* Experience Section */
 .experience-entry {
     margin-bottom: 3rem;
 }
@@ -111,31 +83,60 @@ ul li {
     margin-bottom: 0.1rem;
 }
 
-/* Responsive design adjustments */
-@media (max-width: 768px) {
-    .col-6 {
-        display: block;
-        text-align: left;
-    }
 
-    .location,
-    .date {
-        text-align: left;
-        display: block;
-        font-size: 0.85rem;
-        /* Adjust as necessary */
-    }
+/* Projects Section */
+.project-entry {
+    background: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    display: block;
 }
 
-/* Add new styles for the music grid */
+.project-text,
+.project-image {
+    margin-bottom: 1rem;
+}
 
-/* New styles for the music page intro text */
-.intro-text p {
-    font-size: 1.2rem;
-    margin-top: 4.0rem;
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-title {
+    font-size: 1.75rem;
+    color: #333;
     margin-bottom: 0.5rem;
-    font-weight: 500;
+}
+
+.project-description,
+.skills {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 0.5rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #63696e;
+    border-color: #63696e;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #35383a;
+    border-color: #1d2124;
+}
+
+/* Music Page */
+.intro-text {
     text-align: center;
+    font-weight: 500;
+    font-size: 110%;
+    padding-top: 20px;
 }
 
 .music-grid {
@@ -154,37 +155,14 @@ ul li {
     font-weight: bold;
     margin-top: 0.5rem;
     color: black;
-    text-align: center
 }
 
 .music-grid .release-date {
     font-size: 0.8rem;
     color: #6c757d;
-    text-align: center
 }
 
-/* Adjustments for responsiveness */
-@media (max-width: 992px) {
-    .music-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 576px) {
-    .music-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Ensure images scale within their containers */
-.img-fluid {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-/* Styles for photography content */
+/* Photography Content */
 .photography-content {
     width: 40%;
     height: auto;
@@ -214,62 +192,36 @@ ul li {
     color: #6c757d;
 }
 
-/* Projects Section */
-.project-entry {
-    background: #f9f9f9;
-    padding: 1rem;
-    border-radius: 5px;
-    margin-bottom: 2rem;
-    display: block;
-}
-
-.project-text,
-.project-image {
-    margin-bottom: 1rem;
-}
-
-.project-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-}
-
-.project-title {
-    font-size: 1.75rem;
-    color: #333;
-    margin-bottom: 0.5rem;
-}
-
-.project-description {
-    font-size: 1rem;
-    margin-bottom: 0.5rem;
-}
-
-.skills {
-    color: #6c757d;
-    margin-bottom: 0.5rem;
-}
-
-/* Responsive adjustments */
+/* Responsive Adjustments */
 @media (max-width: 992px) {
-    .project-entry {
+    .music-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .music-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        flex-direction: column;
         text-align: center;
     }
 
-    .project-text {
-        padding-right: 0;
-    }
-
-    .project-image img {
+    .img-fluid {
         max-width: 100%;
-        margin: 0 auto;
-        margin-bottom: 1rem;
+        margin-bottom: 20px;
     }
 }
 
 @media (max-width: 768px) {
     .project-image img {
         max-width: 100%;
+    }
+
+    .col-6 {
+        text-align: left;
+        display: block;
     }
 }
