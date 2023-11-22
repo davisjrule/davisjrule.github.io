@@ -40,6 +40,7 @@ nav ul {
 /* Adjust the navbar brand and nav items spacing */
 .navbar-brand {
     padding-left: 30px;
+    font-weight: 500;
 }
 
 .navbar-nav .nav-item {
